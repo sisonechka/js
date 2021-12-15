@@ -96,7 +96,45 @@ clear(elem); // очищает список
 </html>
 
 //5
+<script>
+let ul = document.createElement('ul');
+document.body.append(ul);
+while (true) {
+      let data = prompt("Введите содержимое:", "");
+      if (!data) {break;}
+      let li = document.createElement('li');
+      li.textContent = data;
+      ul.append(li);
+    }
+</script>
 
+//6
+<ul id="ul">
+  <li id="one">1</li>
+  <li id="two">4</li>
+</ul>
+<script>
+one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');
+</script>
+
+//7
+<script>
+    function showNotification({top, right, className, html}) 
+    {
+    let notification = document.createElement('div');
+    notification.innerHTML = html;
+    document.body.append(notification);
+    setTimeout(() => notification.remove(), 1500);
+    }
+
+    setInterval(() => { showNotification({
+        top: 10,
+        right: 10,
+        html: 'Hello ',
+        className: "welcome"
+      });
+    }, 3000);
+</script>
 
 
 
