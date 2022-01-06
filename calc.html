@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calc.css"></style>
+</head>
+<body>
+<h1>Calculator</h1>
+<div class="container">
+    <div class="item input">
+        <form name="form">
+            <input type="text" name="textview" readonly>
+        </form>
+    </div>
+    <div style="background-color: darkgrey;" class="item clear" onclick="resetCalc()">C</div>
+    <div style="background-color: darkgrey;" class="item" onclick="input('%')">%</div>
+    <div style="background-color: darkgrey;" class="item" onclick="input('/')">&divide</div>
+    <div style="background-color: #DAA520;" class="item" onclick="input('*')">&times</div>
+    <div class="item" onclick="input('7')">7</div>
+    <div class="item" onclick="input('8')">8</div>
+    <div class="item" onclick="input('9')">9</div>
+    <div style="background-color: #DAA520;" class="item" onclick="input('-')">-</div>
+    <div class="item" onclick="input('4')">4</div>
+    <div class="item" onclick="input('5')">5</div>
+    <div class="item" onclick="input('6')">6</div>
+    <div style="background-color: #DAA520;"class="item" onclick="input('+')">+</div>
+    <div class="item" onclick="input('1')">1</div>
+    <div class="item" onclick="input('2')">2</div>
+    <div class="item" onclick="input('3')">3</div>
+    <div class="item equal" onclick="output()">=</div>
+    <div class="item zero" onclick="input('0')">0</div>
+</div>
+<script src="calc.js"></script>
+</body>
+</html>

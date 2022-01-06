@@ -1,0 +1,47 @@
+h1{
+    color: #DAA520;
+    text-align: center;
+}
+body{
+    background-color: black;
+    user-select: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 5px;
+    font-family: "Tahoma";
+    font-weight: 600;
+}
+.item{
+    background-color: dimgrey;
+    border-radius: 30px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:22px;
+    cursor: pointer;
+}
+form{
+    max-width: 100%;
+}
+input{
+    width: 100%;
+    height:60px;
+    border: none;
+    font-size:30px;
+    text-align: right;
+}
+.input{
+    grid-column: 1/-1;
+    background-color: black;
+}
+.zero{
+    grid-column: 1/4;
+}
+.equal{
+    grid-column: 4;
+    grid-row: 5/7;
